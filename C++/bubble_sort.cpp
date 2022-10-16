@@ -28,11 +28,19 @@ void printArray(int arr[], int size)
 // Driver code
 int main()
 {
-	int arr[] = { 5, 1, 4, 2, 8};
-	int N = sizeof(arr) / sizeof(arr[0]);
-	bubbleSort(arr, N);
-	cout << "Sorted array: \n";
-	printArray(arr, N);
+	//int arr[] = { 5, 1, 4, 2, 8};
+	int arr[50],n,i;
+	cout << "Enter the size of the list:";
+    cin >> n;
+	cout << "Enter the list:";
+	for (i=0;i<n;i++)
+	{
+	cin >> arr[i];
+	}
+	//int N = sizeof(arr) / sizeof(arr[0]);
+	bubbleSort(arr, n);
+	cout << "Sorted list is: \n";
+	printArray(arr, n);
 	return 0;
 }
 // This code is contributed by rathbhupendra
